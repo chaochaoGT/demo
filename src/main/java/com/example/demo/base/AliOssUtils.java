@@ -15,7 +15,7 @@ import java.util.List;
  * @Email: wangchao@hellogeek.com
  * @date: 2019/7/11 ;
  */
-public class Test2 {
+public class AliOssUtils {
 
     private static List<Integer> a=new ArrayList<>(3);
 
