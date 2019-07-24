@@ -30,6 +30,17 @@ public class FutureCallTest {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
+
+
+        Future<String> submit1 = executorService.submit(new RealData("cd="));
+
+        try {
+            System.out.println(submit1.get());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
         executorService.shutdown();
     }
 }
